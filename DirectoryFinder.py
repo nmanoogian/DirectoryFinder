@@ -1,3 +1,8 @@
+"""
+DirectoryFinder
+Searches for a specific file using a wordlist and header
+"""
+
 from urllib import *
 import sys
 
@@ -7,6 +12,6 @@ while line != "":
 	url = sys.argv[2]+line.strip().title()
 	a=urlopen(url)
 	if a.getcode() != 404:
-		print(url)
-	# print(line.strip())
+		sys.stderr.write(url)
+	print(line.strip())
 	line = file.readline()
