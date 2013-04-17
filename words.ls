@@ -111,6 +111,7 @@ cake
 camera
 canvas
 card
+cards
 care
 carriage
 cart
